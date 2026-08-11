@@ -234,14 +234,14 @@ function RadioField({ field, value, detail, onChange, onDetailChange }) {
       {field.hint && <p className="text-xs text-marrom/55 mb-1.5">{field.hint}</p>}
       <div className="flex flex-col gap-2 mt-1">
         {field.options.map((opt) => (
-          <label key={opt} className="flex items-center gap-2.5 text-sm text-marrom/85 cursor-pointer">
+          <label key={opt} className="flex items-start gap-2.5 text-sm text-marrom/85 cursor-pointer">
             <input
               type="radio"
               name={field.key}
               required={field.required}
               checked={value === opt}
               onChange={() => onChange(opt)}
-              className="accent-terracota w-4 h-4 shrink-0"
+              className="accent-terracota w-4 h-4 shrink-0 mt-0.5"
             />
             {opt}
           </label>
@@ -351,10 +351,10 @@ export default function SolicitacaoForm() {
   return (
     <div className="flex flex-col gap-6">
       {step !== STEP_CHOICE && step !== STEP_DONE && (
-        <div className="flex items-center gap-2 text-xs tracking-[0.15em] text-terracota font-medium uppercase">
-          <span>{TIPOS[tipo].label}</span>
-          <span className="text-marrom/30">·</span>
-          <span>{step === STEP_BASE ? "Etapa 1 de 2" : "Etapa 2 de 2"}</span>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs tracking-[0.15em] text-terracota font-medium uppercase">
+          <span className="whitespace-nowrap">{TIPOS[tipo].label}</span>
+          <span className="text-marrom/30 hidden sm:inline">·</span>
+          <span className="whitespace-nowrap">{step === STEP_BASE ? "Etapa 1 de 2" : "Etapa 2 de 2"}</span>
         </div>
       )}
 
