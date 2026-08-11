@@ -65,9 +65,9 @@ export default function Hero() {
               alt="Projeto de interiores assinado pela Mahut Arquitetura"
               className="w-full h-[420px] md:h-[520px] object-cover rounded-2xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -left-6 hidden md:block bg-areia border border-marrom/10 rounded-xl px-6 py-4 shadow-lg">
-              <p className="font-display text-2xl text-terracota">10+</p>
-              <p className="text-xs text-marrom/70 mt-1">ambientes projetados</p>
+            <div className="absolute -bottom-6 -left-6 hidden md:block bg-areia border border-marrom/10 rounded-xl px-6 py-4 shadow-lg max-w-[200px]">
+              <p className="font-display text-xl text-terracota leading-snug">Neuroarquitetura</p>
+              <p className="text-xs text-marrom/70 mt-1">aplicada a cada projeto</p>
             </div>
           </div>
         </Reveal>

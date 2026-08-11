@@ -14,8 +14,10 @@ export const NAV_LINKS = [
   { href: "#contato", label: "Contato" },
 ];
 
-export const CONCEITO_MAHUT =
-  "Mahut é uma palavra de origem hebraica que significa essência. Esse conceito fundamenta a filosofia da marca: acreditamos que tanto o ser humano quanto a arquitetura encontram seu verdadeiro propósito quando retornam à sua essência. Inspirada na origem da criação e na compreensão de que o homem foi formado do barro e recebe o fôlego da vida de Deus, a Mahut desenvolve uma arquitetura resiliente, funcional e atemporal, que valoriza a beleza como consequência de um projeto pensado para acolher, servir e acompanhar as pessoas em cada fase da vida.";
+export const CONCEITO_MAHUT = [
+  "Mahut é uma palavra de origem hebraica que significa essência. Esse conceito fundamenta a filosofia da marca: acreditamos que tanto o ser humano quanto a arquitetura encontram seu verdadeiro propósito quando retornam à sua essência.",
+  "Inspirada na origem da criação e na compreensão de que o homem foi formado do barro e recebe o fôlego da vida de Deus, a Mahut desenvolve uma arquitetura resiliente, funcional e atemporal, que valoriza a beleza como consequência de um projeto pensado para acolher, servir e acompanhar as pessoas em cada fase da vida.",
+];
 
 export const SOBRE_LARA =
   "Lara Silveira é arquiteta e urbanista, graduada pela Universidade de Fortaleza, com atuação em Fortaleza, Ceará. Pós-graduada em Arquitetura de Interiores e pós-graduanda em Engenharia Diagnóstica, desenvolve projetos que unem técnica, funcionalidade e sensibilidade, incorporando os princípios da neuroarquitetura para criar espaços que promovem bem-estar, identidade e qualidade de vida. À frente da Mahut Arquitetura, acredita que cada projeto deve respeitar a essência de quem o habita e transformar a experiência de viver os espaços.";

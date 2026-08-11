@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import ConceitoLogo from "./ConceitoLogo";
 import lara from "../assets/lara.jpeg";
 import { CONCEITO_MAHUT, SOBRE_LARA } from "../data";
 
@@ -6,14 +7,23 @@ export default function Sobre() {
   return (
     <section id="sobre">
       <div className="bg-oliva px-6 py-24">
-        <Reveal className="max-w-3xl mx-auto text-center">
-          <span className="text-xs tracking-[0.2em] text-areia/60 font-medium uppercase">
-            Conceito
-          </span>
-          <p className="font-display text-2xl md:text-3xl text-areia leading-relaxed mt-6">
-            {CONCEITO_MAHUT}
-          </p>
-        </Reveal>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-[minmax(0,260px)_1fr] gap-12 md:gap-16 items-center">
+          <Reveal>
+            <ConceitoLogo />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <span className="text-xs tracking-[0.2em] text-areia/60 font-medium uppercase">
+              Conceito
+            </span>
+            <div className="mt-5 flex flex-col gap-4">
+              {CONCEITO_MAHUT.map((paragrafo) => (
+                <p key={paragrafo.slice(0, 24)} className="text-sm md:text-base text-areia/80 leading-relaxed">
+                  {paragrafo}
+                </p>
+              ))}
+            </div>
+          </Reveal>
+        </div>
       </div>
 
       <div className="px-6 py-24 bg-areia">
