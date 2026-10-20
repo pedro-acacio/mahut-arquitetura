@@ -1,26 +1,26 @@
 # Mahut Arquitetura
 
-Landing page da Mahut Arquitetura — projetos de arquitetura e interiores por Lara Silveira, arquiteta e urbanista em Fortaleza-CE.
+Landing page for Mahut Arquitetura — architecture and interior design projects by Lara Silveira, architect and urban planner in Fortaleza-CE, Brazil.
 
 ## Stack
 
 - [Vite](https://vite.dev/) + [React](https://react.dev/)
 - [Tailwind CSS v4](https://tailwindcss.com/)
-- [lucide-react](https://lucide.dev/) para ícones
+- [lucide-react](https://lucide.dev/) for icons
 
-## Rodando localmente
+## Running locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build de produção
+## Production build
 
 ```bash
 npm run build
 ```
 
-## Identidade visual
+## Visual identity
 
-Paleta, tipografia e conteúdo vêm do Manual da Marca da Mahut. Cores: `#e8ded3` (areia), `#a15d3f` (terracota), `#464b2e` (oliva), `#544840` (marrom). Tipografia de exibição: Fraunces (substituindo a fonte proprietária Kenao do manual); corpo de texto: Montserrat.
+Palette, typography and content come from Mahut's Brand Manual. Colors: `#e8ded3` (sand), `#a15d3f` (terracotta), `#464b2e` (olive), `#544840` (brown). Display typeface: Fraunces (replacing the manual's proprietary Kenao font); body text: Montserrat.
